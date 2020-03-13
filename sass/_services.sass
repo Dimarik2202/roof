@@ -15,6 +15,7 @@
 .item 
 .item_row
     display: flex 
+
 .item__image 
     flex: 0 0 230px
 .item__body 
@@ -28,3 +29,13 @@
     font-size: 16px
     line-height: 24px
     padding-right: 10px
+    
+@media (max-width: 768px)
+    .item_row
+        flex-wrap: wrap
+    .srevices__column
+     
+    .item__image
+        flex: 1 1 100%
+        img 
+            width: 100%

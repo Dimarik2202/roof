@@ -3,8 +3,7 @@
 		// .main-slider__body
 
   &__body
-    max-width: 1140px
-    margin: auto
+  
 		// .main-slider__item
 
     &__item
@@ -13,15 +12,21 @@
 
 .slide-content 
   display: flex
+  flex-direction: row-reverse
 		// .slide-content__image
 
   &__image
     width: 65%
     img 
       width: 100%
+      height: 100%
 		// .slide-content__text
 
   &__text
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-content: center
     width: 35%
     color: #ffffff
     text-transform: uppercase
@@ -30,8 +35,8 @@
     background: linear-gradient(to right, #434343, #000000)
   
     h2 
-      padding: 50px 0 0 40px
       font-size: 20px
+      padding: 0 50px
     ul 
       li
         background-image: url(/images/icons/emojione-monotone_check-mark.svg)
@@ -53,3 +58,26 @@
 
   &__item
 
+@media (max-width: 768px)
+  .slide-content 
+    position: relative
+    &__image
+     
+      width: 100%
+      min-height: 200px
+      img 
+      
+  
+    &__text
+      
+      bottom: 25px
+      right: 10px
+      width: 200px
+      position: absolute
+      background: rgba(11, 12, 13, .6)
+      h2 
+        font-size: 12px
+        padding: 5px 15px
+      ul
+        display: none
+    

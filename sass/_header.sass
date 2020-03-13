@@ -3,23 +3,25 @@
 .top-panel
    
 .top-panel__container 
-    padding: 10px 0
+   
+ 
 .top-panel__top 
     display: flex
     justify-content: space-between 
+    padding: 10px 0
 .top-panel__left 
 .contact-block 
 .contact-block__inner
 .contact-block__item 
        
-.contact-block__item--icon 
-    display: inline-block
-.iconify
-.contact-block__value-wrap
-    display: inline-block
-    color: #fff
-    text-decoration: none
-.contact-block__label
+.contact-block__inner_icon
+
+    padding-left: 35px
+    background-image: url(../images/header/phone.svg) 
+    background-repeat: no-repeat
+    background-size: 28px 28px
+
+
 .contact-block__text
     a
         display: block
@@ -28,18 +30,36 @@
 .top-panel__right
 .work-time-block
 .work-time-block__inner
-.work-time-block__item
-.work-time-block__item--icon
     display: inline-block
-.work-time-block__value-wrap 
-    display: inline-block
+.work-time-block__inner_icon
+    padding-left: 35px
+    background-image: url(../images/header/clock.svg) 
+    background-repeat: no-repeat
+    background-size: 28px 28px
 .work-time-block__text
     color: #000
 
 .nav-bar
+    
     .container
         .nav-bar__row
             background-image: url(../images/nav-bar/navbar-bg.jpg)
             display: flex
+            position: relative
             .site-branding
                 margin: 15px
+
+
+
+.mobile-menu-btn
+    display: none
+    position: absolute
+    right: 20px
+    top: 5px
+@media (max-width: 768px)
+    .nav-bar__container
+        padding: 0 !important
+    .mobile-menu-btn
+        display: block
+    .top-panel__top 
+        font-size: 14px
