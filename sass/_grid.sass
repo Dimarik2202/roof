@@ -5,19 +5,6 @@
     max-width: 1170px
     margin: 0 auto
 
-@media (max-width: 1199px)
-    .container
-        max-width: 1140px
-       
-
-@media (max-width: 991px)
-    .container
-        max-width: 960px
-       
-@media (max-width: 768px)
-    .container
-        max-width: 100%
-        padding: 0 15px
 
        
     
@@ -27,12 +14,27 @@
 
 .section-title
     padding: 0 0 40px 0
+    width: 50%
+    margin: 0 auto
+  
 
 .section-title__title
     text-transform: uppercase
     text-align: center
     font-size: 24px
     line-height: 28px
+    position: relative
+    &::before
+        position: absolute
+        top: -20px
+        left: 50%
+        transform: translateX(-50%)
+        content: ''
+        background: rgba(251, 186, 8, 1)
+        width: 70px
+        height: 3px
+        display: block
+   
 .section-title__subtitle
     text-transform: uppercase
 
@@ -48,6 +50,9 @@
 
 .custom-list__li
     padding: 5px 0
+    ul 
+        padding-left: 0
+        font-size: 16px
 .custom-list__li_oragne
     background-image: url(../images/icons/dotorange.svg)
     background-position: 1px 18px
@@ -56,3 +61,20 @@
     padding: 7px 20px
 
 
+
+@media (max-width: 1199px)
+    .container
+        max-width: 1140px
+       
+
+@media (max-width: 991px)
+    .container
+        max-width: 960px
+       
+@media (max-width: 768px)
+    .section-title
+        padding: 0 
+        width: 75%
+    .container
+        max-width: 100%
+        padding: 0 15px
