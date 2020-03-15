@@ -81,10 +81,10 @@
             <div class="main-slider__item">
                 <div class="slide-content">
                     <div class="slide-content__text">
-                        <h2>Ремонт мягкой кровли</h2>
+                        <h2>Кровельные работы в Москве и Московсокй области</h2>
                         <ul class="ul__icons-check">
-                            <li>Рулонная наплавляемая</li>
-                            <li>Гибкая черепица</li>
+                            <li>Мягкая кровля</li>
+                            <li>Металочерепица</li>
                             <li>Мембранная черепица</li>
                         </ul>
                     </div>
@@ -210,6 +210,30 @@
                     <div class="services__item item">
                         <div class="item_row">
                             <div class="item__image">
+                                <img src="/images/services/metal.jpg" alt="">
+                            </div>
+                            <div class="item__body">
+                                <h2 class="item__title">Мягкая кровля</h2>
+                                <p class="item__text">Рулонная наплавляемая, гибкая черепица, мембранная</p>
+                                <div class="item__price">
+                                    <div class="price__label">
+                                        от
+                                    </div>
+                                    <div class="price__value">
+                                        400
+                                    </div>
+                                    <div class="price__currency">
+                                        руб
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="srevices__column">
+                    <div class="services__item item">
+                        <div class="item_row">
+                            <div class="item__image">
                                 <img src="/images/services/shifer.jpg" alt="">
                             </div>
                             <div class="item__body">
@@ -230,15 +254,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="srevices__column srevices__column_orange">
-                    <div class="services__item item">
-                        <div class="item_row">
 
-                            <div class="get-smeta">Вызвать мастера для замеров и и консультацииs</div>
-                        </div>
-                    </div>
+
+            </div>
+
+
+            <div class="button-get-calculate">
+                <div class="button-get-calculate__row">
+                    <img src="/images/services/ruler.svg" alt="">
+                    <div class="get-smeta">Получить точнный расчёт или вызывать замерщика</div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -297,6 +322,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
     </section>
@@ -330,6 +356,12 @@
                             <li class="custom-list__li">Прочие строительные работы</li>
                         </ul>
                     </div>
+                </div>
+            </div>
+            <div class="button-get-calculate">
+                <div class="button-get-calculate__row">
+                    <img src="/images/services/ruler.svg" alt="">
+                    <div class="get-smeta">Получить точнный расчёт или вызывать замерщика</div>
                 </div>
             </div>
         </div>
@@ -470,6 +502,10 @@
                 $(this).toggleClass("on");
                 $(".main-mnu").slideToggle();
                 return false;
+            });
+
+            $(".button-get-calculate").click(function () {
+                alert("hi");
             });
 
 

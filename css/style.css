@@ -84,6 +84,12 @@
 }
 
 @media (max-width: 768px) {
+  .section {
+    padding: 25px 0px;
+  }
+  .section-title__title {
+    font-size: 20px;
+  }
   .section-title {
     padding: 0;
     width: 75%;
@@ -165,7 +171,7 @@
 
 .contact-block__text a {
   display: block;
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -181,7 +187,7 @@
 }
 
 .work-time-block__text {
-  color: #000;
+  color: #fff;
 }
 
 .nav-bar .container .nav-bar__row {
@@ -436,8 +442,8 @@ header {
 }
 
 .icons-flex .item-icon {
-  -ms-flex-preferred-size: 230px;
-      flex-basis: 230px;
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
 }
 
 .icons-flex .item-icon__img img {
@@ -478,10 +484,6 @@ header {
   padding: 0 8px;
 }
 
-.srevices__column_orange {
-  background-color: rgba(254, 202, 57, 0.9);
-}
-
 .item_row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -504,11 +506,6 @@ header {
 
 .item__body_transporent {
   background-color: transparent !important;
-}
-
-.get-smeta {
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
 .item__title {
@@ -643,6 +640,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 20px 0;
 }
 
 .other__image {
@@ -716,5 +714,59 @@ header {
 
 .footer__icons img {
   max-height: 40px;
+}
+
+.button-get-calculate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button-get-calculate__row {
+  background-color: rgba(254, 202, 57, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+}
+
+.button-get-calculate__row img {
+  width: 35px;
+}
+
+.button-get-calculate__row .get-smeta {
+  color: #ffffff;
+  -ms-flex-item-align: center !important;
+      -ms-grid-row-align: center !important;
+      align-self: center !important;
+  line-height: 35px;
+  padding-left: 45px;
+  font-size: 20px;
+  text-transform: uppercase;
+  width: 70%;
+  font-family: 'Roboto Medium', Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  .button-get-calculate__row {
+    width: 100%;
+  }
+  .get-smeta {
+    width: 95%;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    padding: 5px 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
