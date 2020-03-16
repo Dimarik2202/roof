@@ -1,5 +1,5 @@
 .header
-    background-color: rgba(254, 202, 57, .9)
+    background-color: #fff
 .top-panel
    
 .top-panel__container 
@@ -25,7 +25,7 @@
 .contact-block__text
     a
         display: block
-        color: #fff
+        color: #000
         text-decoration: none
 .top-panel__right
 .work-time-block
@@ -37,19 +37,37 @@
     background-repeat: no-repeat
     background-size: 28px 28px
 .work-time-block__text
-    color: #fff
+    color: #000
+
+
 
 .nav-bar
-    
+    background-color: #000000b3
     .container
         .nav-bar__row
-            background-image: url(../images/nav-bar/navbar-bg.jpg)
+         
             display: flex
             position: relative
             .site-branding
-                margin: 15px
-
-
+                margin: 8px
+                .site-logo 
+                    height: 100%
+.site-logo__link
+    height: 100%
+    img 
+        height: 50px
+     
+.nav-bar_sticky 
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 100
+ 
+    .nav-bar__container
+        .nav-bar__row
+           
+           
+           
 
 .mobile-menu-btn
     display: none
@@ -57,9 +75,15 @@
     right: 20px
     top: 5px
 @media (max-width: 768px)
+    .site-branding
+        padding-left: 25px
     .nav-bar__container
         padding: 0 !important
     .mobile-menu-btn
         display: block
     .top-panel__top 
         font-size: 14px
+
+@media (max-width: 375px)
+    .top-panel
+        display: none

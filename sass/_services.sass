@@ -11,18 +11,22 @@
     flex: 0 1 50% 
     margin: 0 0 20px 0
     padding: 0 8px
+
 .services__item 
-
-
+  
 .item 
+    height: 100%
 .item_row
     display: flex 
-
+    height: 100%
 .item__image 
-    flex: 0 0 230px
+    flex: 0 0 200px
+    img 
+        width: 100%
+        height: 100%
 .item__body 
     flex: 1 1 auto
-    padding: 0 0 0 15px
+    padding-left: 15px
     background-color: #ffffff
 
 .item__body_transporent
@@ -36,22 +40,34 @@
     font-size: 16px
     line-height: 24px
     padding-right: 10px
-
+    flex: 1 1 auto
+    
 .item__price 
     display: inline-block
     background: rgba(254, 202, 57, 0.9)
     padding: 7px
     font-weight: 600
+    margin-bottom: 10px
+    
 .price__label 
     display: inline-block
 .price__value 
     display: inline-block
-    padding: 0 5px
-.price__currency 
-    display: inline-block
+    padding: 0 15px 0 0
+    position: relative
+    &::after
+        content: ""
+        position: absolute
+        background: url('../images/icons/rub.svg') no-repeat
+        background-size: 18px 18px
+        height: 24px
+        width: 24px
+        right: -8px
+       
     
 @media (max-width: 768px)
-    
+    .srevices__column
+        flex: 0 1 100% 
     .item_row
         flex-wrap: wrap
     .srevices__column

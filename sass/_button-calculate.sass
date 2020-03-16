@@ -1,32 +1,66 @@
+.srevices-button-element
+   
+    flex: 0 1 50%
+    margin: 0 0 20px 0
+    padding: 0 8px
+.srevices-button-element__row 
+    background-color: rgba(254, 202, 57, 0.9)
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+   
+.button__body 
+    width: 70%
+    margin: 0 auto
+    padding-left: 50px
+    background: url(../images/services/ruler.svg) 0 10px no-repeat
+    background-size: 32px 32px
+
+    
 .button-get-calculate
     display: flex
+    margin: 40px 0
     justify-content: center
+
+    
 .button-get-calculate__row
-    background-color: rgba(254, 202, 57, 0.9)
+    background-color: #fbba08
+    border-radius: 7px 
+    padding: 7px 0
     display: flex
     flex-direction: row
     justify-content: center
-    width: 50%
-    img 
-        width: 35px    
-    
-    .get-smeta
-        color: #ffffff
-        align-self: center !important
 
-        line-height: 35px
-        padding-left: 45px
-        font-size: 20px
-        text-transform: uppercase
-        width: 70%
-        +RobotoMedium
-        cursor: pointer
+    
+.button-get-calculate__body
+    width: 70%
+
+
+.get-smeta
+    color: #ffffff
+    background: url(../images/services/ruler.svg) 0 10px no-repeat
+    align-self: center !important
+    font-size: 16px
+    text-transform: uppercase
+    line-height: 24px
+    padding-left: 45px
+    
+    +RobotoMedium
+    cursor: pointer
+@media screen and ( max-width: 760px )
+    .srevices-button-element
+        display: none
+    
 
 @media (max-width: 375px) 
+    .button-get-calculate
+        display: flex
     .button-get-calculate__row
-        width: 100%
+        width: 90%
+        img 
+            margin: 0 5px
     .get-smeta
         width: 95%
         font-size: 16px !important
         line-height: 20px !important
-        padding: 5px 0

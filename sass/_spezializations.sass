@@ -7,34 +7,34 @@
 .specialization__row 
     display: flex
     flex-wrap: wrap
-    justify-content: center
+    justify-content: space-around
+    padding: -8px
 
 .specizlization__item 
-    flex: 1 1 180px
-    display: flex
-    padding: -15px
-    max-width: 262px
+    flex: 0 1 230px
+    padding: 0px
+    //border: 2px rgba(251, 186, 8, 1) solid
+    padding: 8px
+  
 .specialization__col
+    flex: 1
     display: flex
     flex-direction: column
-    padding: 15px
-    flex-grow: 1
+    height: 100%
 
 .specialize__image 
-    display: flex
-    flex: 1 1 100%
-
-    img 
-        flex: 1
-       
-.specialyze__text
-    flex: 1 1 100%
+    width: 100%
+      
+.specialyze__text 
+    flex: 1 1 auto
+   
     text-transform: uppercase
-    color: #ffffff
-    background-color: rgba(251, 186, 8, 0.8)
+    color: #fff
+    background-color: rgba(76, 76, 76, .9);
+    //background-color: rgba(251, 186, 8, 1)
     line-height: 21px
     font-size: 18px
-    padding: 18px 10px 26px 18px
+    padding: 18px 10px 26px 10px
     
 
 @media (max-width: 768px)
