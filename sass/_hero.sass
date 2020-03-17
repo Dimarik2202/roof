@@ -1,20 +1,21 @@
 .hero 
-    padding: 70px 0
+    padding: 70px 0 0 0
     //background-color: #f0f8ff
 .container 
 .hero__body 
     display: flex
     flex-wrap: wrap
-    flex-grow: 1
     padding: -15px
+    justify-content: space-around
     
 .hero__col 
     display: flex
-    flex: 1 0 100%
     flex-direction: column
     justify-content: center
     text-transform: uppercase
     padding: 15px
+    img 
+        width: 100%
 .col__body
     
 .col__body_right
@@ -32,17 +33,66 @@
 
 .hero__col_background-logo
 
-   
-@media ( max-width:  1199px)
-    .col__body
-        padding: 0 15px
-
-@media ( max-width:  1030px)
-    .col__body_right   
-        align-self: auto
-
-@media ( max-width:  375px)
+  
+// Large
+@media (min-width: 1281px) 
     .hero 
-        padding: 20px 0
-    .hero__col_background-logo
-        width: 100%
+     // background-color: red
+
+// ##Device = Laptops, Desktops
+//  ##Screen = B/w 1025px to 1280px
+@media (min-width: 1025px) and (max-width: 1280px)  
+   // .hero 
+     // background-color: green
+
+//##Device = Tablets, Ipads (portrait)
+//  ##Screen = B/w 768px to 1024px
+@media (min-width: 768px) and (max-width: 1024px)  
+   // .hero 
+     // background-color: blue
+    .hero__body
+        padding: 0 20px
+    .hero__col
+        flex: 1 1 
+        padding: 2px
+    .col__title
+        text-align: center
+
+// ##Device = Tablets, Ipads (landscape)
+//  ##Screen = B/w 768px to 1024px 
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
+    .hero 
+      //background-color: #f009aa
+      padding: 20px 0
+    .hero__body
+        padding: 0 20px
+    .hero__col
+        flex: 1 1 
+        padding: 2px
+    .col__title
+        text-align: center
+
+//#Device = Low Resolution Tablets, Mobiles (Landscape)
+//##Screen = B/w 481px to 767px
+@media (min-width: 481px) and (max-width: 767px)  
+    .hero 
+      padding: 20px 0  
+      background-color: indianred
+    .hero__body 
+        flex-direction: row-reverse
+        justify-content: space-around
+    .hero__col
+        padding: 5px
+      
+//  ##Device = Most of the Smartphones Mobiles (Portrait)
+//  ##Screen = B/w 320px to 479px
+@media (min-width: 320px) and (max-width: 480px)    
+    .hero
+          padding: 20px 0  
+    .hero__body
+        flex-direction: column-reverse
+
+
+    
+
+  
