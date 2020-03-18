@@ -750,6 +750,7 @@ header {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  font-size: 20px;
 }
 
 .item_bottom {
@@ -936,6 +937,7 @@ header {
 }
 
 .other__text {
+  margin: 0 20px;
   background-color: #fff;
   -webkit-box-flex: 1;
       -ms-flex: 1 467px;
