@@ -1031,7 +1031,6 @@ header {
 }
 
 .button__body {
-  width: 70%;
   margin: 0 auto;
   padding-left: 50px;
   background: url(../images/services/ruler.svg) 0 10px no-repeat;
@@ -1071,12 +1070,12 @@ header {
 }
 
 .button-get-calculate__body {
-  width: 70%;
+  padding: 7px 20px;
 }
 
 .get-smeta {
   color: #ffffff;
-  background: url(../images/services/ruler.svg) 0 10px no-repeat;
+  background: url(../images/services/ruler.svg) 0 0 no-repeat;
   -ms-flex-item-align: center !important;
       -ms-grid-row-align: center !important;
       align-self: center !important;
