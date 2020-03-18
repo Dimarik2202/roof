@@ -6,14 +6,15 @@
 .srvices__row 
     display: flex
     flex-wrap: wrap
-    margin: 0 -8px
+   
 .srevices__column
     flex: 0 1 50% 
     margin: 0 0 20px 0
     padding: 0 8px
+    
 
 .services__item 
-  
+    
 .item 
     height: 100%
 .item_row
@@ -42,29 +43,54 @@
     line-height: 24px
     padding-right: 10px
     flex: 1 1 auto
-    
-.item__price 
-    display: inline-block
-    background: rgba(254, 202, 57, 0.9)
-    padding: 7px
+.item_bottom
+    display: flex
+    justify-content: space-between
     font-weight: 600
-    margin-bottom: 10px
-    
+    align-items: center
+    padding: 0 15px 20px 0
+.item__price 
+    display: flex
+    align-items: baseline
+    //border: 2px solid rgba(254, 202, 57, 1)
+    background-color: #fafafa
+   
+    color: #000 
 .price__label 
-    display: inline-block
+    padding-right: 2px
+
 .price__value 
-    display: inline-block
-    padding: 0 15px 0 0
-    position: relative
-    &::after
-        content: ""
-        position: absolute
-        background: url('../images/icons/rub.svg') no-repeat
-        background-size: 18px 18px
-        height: 24px
-        width: 24px
-        right: -8px
-       
+    // &::after
+    //     content: ""
+    //     position: absolute
+    //     background: url('../images/icons/rub.svg') no-repeat
+    //     background-size: 22px 22px
+    //     height: 24px
+    //     width: 24px
+    //     right: -8px
+.item_btn
+    border: none
+    border-radius: 2px
+    padding: 7px 24px
+    font-size: 16px
+    text-transform: uppercase
+    cursor: pointer
+    color: white
+    background-color: #64a3d6
+    box-shadow: 0 0 4px #999
+    outline: none
+    
+.ripple 
+    background-position: center
+    transition: background 0.8s
+
+.ripple:hover 
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%
+
+.ripple:active 
+    background-color: #6eb9f7
+    background-size: 100%
+    transition: background 0s
     
 @media (max-width: 768px)
     .srevices__column
@@ -78,12 +104,11 @@
         img 
             width: 100%
 
-    .item__price 
-        margin-bottom: 10px
+
+     
 
 //##Device = Tablets, Ipads (portrait)
 //  ##Screen = B/w 768px to 1024px
 @media (min-width: 768px) and (max-width: 1024px)  
-   .srevices__column
-       flex: 1 1 50%
- 
+    .srevices__column
+        flex: 1 1 50%

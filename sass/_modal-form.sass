@@ -17,6 +17,7 @@
 .form__body 
 .form__img
     padding: 15px
+    position: relative
     img
         width: 200px
         display: block
@@ -24,11 +25,24 @@
 .form__close 
     display: block
     float: right
-    padding: 1px 5px
+    right: 10px
+    top: -10px
+    width: 30px
+    height: 30px
     margin: 5px
     cursor: pointer
     color: #fff
     background-color: #000
+    position: absolute
+    border-radius: 15px
+    &::after
+        content: 'x'
+        position: absolute
+        top: 5px
+        right: 10px
+        font-size: 18px
+        font-weight: 600
+    
 .form__content 
     padding: 10px 15px
     input
@@ -62,3 +76,8 @@
         transform: scale(0)
     100% 
         transform: scale(1)
+  
+
+@media (max-width: 768px)
+    .modal__form 
+        margin: 120px 20px

@@ -4,32 +4,8 @@
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1140px;
   margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-  .container {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 991px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
-.color-line {
-  height: 2px;
-  background-color: #3a3a3a1f;
-  margin: 50px 0;
 }
 
 .section {
@@ -105,6 +81,45 @@
   .section-title {
     padding: 0;
     width: 75%;
+  }
+}
+
+@media (min-width: 1281px) {
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    max-width: 100%;
   }
 }
 
@@ -443,7 +458,6 @@ header {
 
 .hero__col {
   font-family: 'Roboto Medium', Arial, Helvetica, sans-serif;
-  line-height: 32px;
 }
 
 .specialyze__text {
@@ -574,8 +588,15 @@ header {
 }
 
 .col__list li {
+  line-height: 30px;
   padding-left: 30px;
   background: url(../images/hero/emojione-monotone_check-mark.svg) 0 6px no-repeat;
+}
+
+.color-line {
+  height: 2px;
+  background-color: #3a3a3a1f;
+  margin: 50px 0;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
@@ -607,9 +628,10 @@ header {
             flex-direction: row-reverse;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding: 15px 0;
   }
   .hero__col {
-    padding: 5px;
+    padding: 5px 0 0 0;
   }
 }
 
@@ -617,11 +639,12 @@ header {
   .hero {
     padding: 20px 0;
   }
-  .hero__body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+  .col__body_right {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .color-line {
+    margin: 20px 0;
   }
 }
 
@@ -653,7 +676,7 @@ header {
   font-size: 16px;
   font-weight: 600;
   text-align: center;
-  color: #7b7979;
+  color: #444444;
   line-height: 28px;
   text-transform: uppercase;
 }
@@ -671,7 +694,6 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 -8px;
 }
 
 .srevices__column {
@@ -730,32 +752,64 @@ header {
           flex: 1 1 auto;
 }
 
-.item__price {
-  display: inline-block;
-  background: rgba(254, 202, 57, 0.9);
-  padding: 7px;
+.item_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-weight: 600;
-  margin-bottom: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px 20px 0;
+}
+
+.item__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  background-color: #fafafa;
+  color: #000;
 }
 
 .price__label {
-  display: inline-block;
+  padding-right: 2px;
 }
 
-.price__value {
-  display: inline-block;
-  padding: 0 15px 0 0;
-  position: relative;
+.item_btn {
+  border: none;
+  border-radius: 2px;
+  padding: 7px 24px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+  background-color: #64a3d6;
+  -webkit-box-shadow: 0 0 4px #999;
+          box-shadow: 0 0 4px #999;
+  outline: none;
 }
 
-.price__value::after {
-  content: "";
-  position: absolute;
-  background: url("../images/icons/rub.svg") no-repeat;
-  background-size: 18px 18px;
-  height: 24px;
-  width: 24px;
-  right: -8px;
+.ripple {
+  background-position: center;
+  -webkit-transition: background 0.8s;
+  transition: background 0.8s;
+}
+
+.ripple:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+
+.ripple:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  -webkit-transition: background 0s;
+  transition: background 0s;
 }
 
 @media (max-width: 768px) {
@@ -775,9 +829,6 @@ header {
   }
   .item__image img {
     width: 100%;
-  }
-  .item__price {
-    margin-bottom: 10px;
   }
 }
 
@@ -832,7 +883,7 @@ header {
           flex: 1 1 auto;
   text-transform: uppercase;
   color: #fff;
-  background-color: #000000b3;
+  background-color: rgba(251, 186, 8, 0.7);
   line-height: 21px;
   font-size: 18px;
   padding: 18px 10px 26px 10px;
@@ -900,6 +951,12 @@ header {
           align-items: center;
 }
 
+.work-galary__container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
 .work-galary__container img {
   width: 340px;
 }
@@ -965,6 +1022,12 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+.srevices-button-element__row:hover {
+  background-color: #64a3d6;
 }
 
 .button__body {
@@ -987,7 +1050,7 @@ header {
 
 .button-get-calculate__row {
   background-color: #fbba08;
-  border-radius: 7px;
+  border-radius: 3px;
   padding: 7px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -999,6 +1062,12 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+.button-get-calculate__row:hover {
+  background-color: #64a3d6;
 }
 
 .button-get-calculate__body {
@@ -1066,6 +1135,7 @@ header {
 
 .form__img {
   padding: 15px;
+  position: relative;
 }
 
 .form__img img {
@@ -1077,11 +1147,25 @@ header {
 .form__close {
   display: block;
   float: right;
-  padding: 1px 5px;
+  right: 10px;
+  top: -10px;
+  width: 30px;
+  height: 30px;
   margin: 5px;
   cursor: pointer;
   color: #fff;
   background-color: #000;
+  position: absolute;
+  border-radius: 15px;
+}
+
+.form__close::after {
+  content: 'x';
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .form__content {
@@ -1139,6 +1223,12 @@ header {
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .modal__form {
+    margin: 120px 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

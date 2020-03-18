@@ -8,6 +8,9 @@
     display: flex
     flex-direction: column
     justify-content: center
+    transition: background-color 0.5s ease
+    &:hover
+        background-color: #64a3d6
    
 .button__body 
     width: 70%
@@ -25,11 +28,14 @@
     
 .button-get-calculate__row
     background-color: #fbba08
-    border-radius: 7px 
+    border-radius: 3px 
     padding: 7px 0
     display: flex
     flex-direction: row
     justify-content: center
+    transition: background-color 0.5s ease
+    &:hover
+        background-color: #64a3d6
 
     
 .button-get-calculate__body
@@ -44,7 +50,6 @@
     text-transform: uppercase
     line-height: 24px
     padding-left: 45px
-    
     +RobotoMedium
     cursor: pointer
 @media screen and ( max-width: 760px )

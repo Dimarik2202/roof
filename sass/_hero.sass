@@ -28,11 +28,16 @@
     list-style-type: none
     padding-left: 0 
     li 
+        line-height: 30px
         padding-left: 30px
         background: url(../images/hero/emojione-monotone_check-mark.svg) 0 6px no-repeat
 
 .hero__col_background-logo
 
+.color-line
+    height: 2px
+    background-color: #3a3a3a1f
+    margin: 50px 0
   
 // Large
 @media (min-width: 1281px) 
@@ -62,7 +67,7 @@
 //  ##Screen = B/w 768px to 1024px 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
     .hero 
-      padding: 20px 0
+        padding: 20px 0
     .hero__body
         padding: 0 20px
     .hero__col
@@ -75,23 +80,29 @@
 //##Screen = B/w 481px to 767px
 @media (min-width: 481px) and (max-width: 767px)  
     .hero 
-      padding: 20px 0  
-       //background-color: indianred
+        padding: 20px 0
+        
     .hero__body 
         flex-direction: row-reverse
         justify-content: space-around
+        padding: 15px 0
     .hero__col
-        padding: 5px
+        padding: 5px 0 0 0 
       
 //  ##Device = Most of the Smartphones Mobiles (Portrait)
 //  ##Screen = B/w 320px to 479px
 @media (min-width: 320px) and (max-width: 480px)    
     .hero
-          padding: 20px 0  
+        padding: 20px 0
+ 
     .hero__body
-        flex-direction: column-reverse
+      
+    .col__body_right
+        align-self: flex-start
 
+    .color-line
 
+        margin: 20px 0
+        
     
 
-  

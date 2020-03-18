@@ -2,20 +2,9 @@
     box-sizing: border-box
 
 .container
-    max-width: 1170px
+    max-width: 1140px
     margin: 0 auto
-    @media (max-width: 768px)
-        max-width: 100%
-    @media (max-width: 991px)
-        max-width: 960px
-    @media (max-width: 1199px)
-        max-width: 1140px    
-
-.color-line
-    height: 2px
-    background-color: #3a3a3a1f
-    margin: 50px 0
-
+  
 .section
     padding: 50px 0px
 
@@ -67,6 +56,11 @@
     list-style-type: none
     padding: 7px 20px
 
+
+
+
+
+
 @media (max-width: 768px)
     .section
         padding: 25px 0px
@@ -76,4 +70,43 @@
         padding: 0 
         width: 75%
 
-        
+
+
+    // Large
+@media (min-width: 1281px) 
+    .container
+        max-width: 1140px
+        margin: 0 auto
+// ##Device = Laptops, Desktops
+//  ##Screen = B/w 1025px to 1280px
+@media (min-width: 1025px) and (max-width: 1280px)  
+    .container
+        max-width: 1024px
+        margin: 0 auto
+//##Device = Tablets, Ipads (portrait)
+//  ##Screen = B/w 768px to 1024px
+@media (min-width: 768px) and (max-width: 1024px)  
+    .container
+        max-width: 960px
+        margin: 0 auto
+
+// ##Device = Tablets, Ipads (landscape)
+//  ##Screen = B/w 768px to 1024px 
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
+    .container
+        max-width: 100%
+
+//#Device = Low Resolution Tablets, Mobiles (Landscape)
+//##Screen = B/w 481px to 767px
+@media (min-width: 481px) and (max-width: 767px)  
+    .container
+        max-width: 100%
+    
+  
+      
+//  ##Device = Most of the Smartphones Mobiles (Portrait)
+//  ##Screen = B/w 320px to 479px
+@media (min-width: 320px) and (max-width: 480px)    
+    .container
+        max-width: 100%
+     
