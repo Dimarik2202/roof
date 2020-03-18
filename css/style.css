@@ -596,7 +596,7 @@ header {
 .color-line {
   height: 2px;
   background-color: #3a3a3a1f;
-  margin: 50px 0;
+  margin: 50px 20px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
@@ -644,7 +644,7 @@ header {
         align-self: flex-start;
   }
   .color-line {
-    margin: 20px 0;
+    margin: 20px;
   }
 }
 
