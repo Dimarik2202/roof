@@ -207,7 +207,7 @@
             <!---end icons block-->
 
             <!--stsrt srvices-->
-            <section class="services section_lith-gary section">
+            <section class="services section_light-gary section">
                 <div class="container">
                     <div class="services__title section-title">
                         <h1 class="services__h1 section-title__title">
@@ -431,8 +431,9 @@
                 </div>
             </section>
             <!-- end about-->
+
             <!--specialization start-->
-            <section class="specializations section">
+            <section class="specializations section section_light-gary">
                 <div class="container">
                     <div class="section-title">
                         <h3 class="specialization__title section-title__title">
@@ -495,8 +496,27 @@
 
             </section>
             <!--specialization end-->
+            <section class="brands-section section">
+                <div class="container">
+                    <div class="section-title">
+                        <h3 class="brands__title section-title__title">
+                            Используем только проверенные материалы
+                        </h3>
+                        <p class="brands_subtitle section-title__subtitle">Материалы которые не подведут</p>
+                    </div>
+
+                    <div class="brands__row">
+                        <img src="/images/brands/3940_tekhnonikol1.svg" alt="">
+                        <img src="/images/brands/axton1.svg" alt="">
+                        <img src="/images/brands/shingals1.svg" alt="">
+                        <img src="/images/brands/unnamed1.svg" alt="">
+                        <img src="/images/brands/knauf1.svg" alt="">
+                    </div>
+
+                </div>
+            </section>
             <!--other-services start-->
-            <section class="other-section section_lith-gary section">
+            <section class="other-section section_light-gary section">
                 <div class="container">
                     <div class="section-title">
                         <h3 class="other-services__title section-title__title">
@@ -709,10 +729,40 @@
 
             $('.main-slider__body').slick({
                 dots: true,
-                infinite: true,
+
                 speed: 500,
                 fade: true,
-                cssEase: 'linear'
+
+            });
+
+            $('.brands__row').slick({
+                centerMode: true,
+                slidesToShow: 4,
+                slidesToScroll: 2,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }]
             });
 
             $('.work-galary__container').slick({
