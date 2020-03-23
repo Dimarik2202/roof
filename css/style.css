@@ -916,19 +916,19 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 500px;
-          flex: 1 500px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding: 20px 0;
+  background-color: #ffffff;
+  padding: 20px;
 }
 
 .other__image {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 467px;
-          flex: 1 467px;
+  -webkit-box-flex: 45%;
+      -ms-flex: 45%;
+          flex: 45%;
+  min-height: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -941,20 +941,39 @@ header {
 }
 
 .other__text {
-  margin: 0 20px;
-  background-color: #fff;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 467px;
-          flex: 1 467px;
+  -webkit-box-flex: 55%;
+      -ms-flex: 55%;
+          flex: 55%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.other__item {
+  padding: 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 50%;
+          flex: 1 50%;
+}
+
+.other__item p {
+  text-align: center;
+}
+
+.other__icon img {
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 320px) and (max-width: 700px) {
+  .other__image {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
 }
 
 .work-galary__container {
@@ -1353,6 +1372,9 @@ header {
         -ms-flex: 100%;
             flex: 100%;
   }
+  .about-icons__item p {
+    text-align: center;
+  }
   .about-images__item {
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
@@ -1362,6 +1384,10 @@ header {
     width: 100%;
     height: 100%;
   }
+}
+
+.brands-section {
+  margin: 0 30px;
 }
 
 .brands__row {
